@@ -1,0 +1,205 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://XO.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://s1.gd" type="Script" id=2]
+[ext_resource path="res://carré blanc.png" type="Texture" id=3]
+[ext_resource path="res://vars.gd" type="Script" id=4]
+[ext_resource path="res://s4.gd" type="Script" id=5]
+[ext_resource path="res://s2.gd" type="Script" id=6]
+[ext_resource path="res://s3.gd" type="Script" id=7]
+[ext_resource path="res://s6.gd" type="Script" id=8]
+[ext_resource path="res://s7.gd" type="Script" id=9]
+[ext_resource path="res://s9.gd" type="Script" id=10]
+[ext_resource path="res://s8.gd" type="Script" id=11]
+[ext_resource path="res://s5.gd" type="Script" id=12]
+[ext_resource path="res://Buttons.gd" type="Script" id=13]
+[ext_resource path="res://won2.gd" type="Script" id=14]
+[ext_resource path="res://Owon.gd" type="Script" id=15]
+[ext_resource path="res://won3.gd" type="Script" id=16]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="reset" type="Button" parent="."]
+margin_left = 182.0
+margin_top = 484.0
+margin_right = 295.0
+margin_bottom = 546.0
+toggle_mode = true
+action_mode = 0
+text = "reset"
+
+[node name="Buttons" type="Node2D" parent="."]
+script = ExtResource( 13 )
+
+[node name="Button" type="Button" parent="Buttons"]
+margin_right = 152.0
+margin_bottom = 152.0
+
+[node name="Button2" type="Button" parent="Buttons"]
+margin_left = 168.0
+margin_right = 320.0
+margin_bottom = 152.0
+
+[node name="Button3" type="Button" parent="Buttons"]
+margin_left = 328.0
+margin_right = 480.0
+margin_bottom = 152.0
+
+[node name="Button4" type="Button" parent="Buttons"]
+margin_top = 168.0
+margin_right = 152.0
+margin_bottom = 320.0
+
+[node name="Button5" type="Button" parent="Buttons"]
+margin_left = 168.0
+margin_top = 168.0
+margin_right = 320.0
+margin_bottom = 320.0
+
+[node name="Button6" type="Button" parent="Buttons"]
+margin_left = 328.0
+margin_top = 168.0
+margin_right = 480.0
+margin_bottom = 320.0
+
+[node name="Button7" type="Button" parent="Buttons"]
+margin_top = 328.0
+margin_right = 152.0
+margin_bottom = 480.0
+
+[node name="Button8" type="Button" parent="Buttons"]
+margin_left = 168.0
+margin_top = 328.0
+margin_right = 320.0
+margin_bottom = 480.0
+
+[node name="Button9" type="Button" parent="Buttons"]
+margin_left = 328.0
+margin_top = 328.0
+margin_right = 480.0
+margin_bottom = 480.0
+
+[node name="grid" type="Node2D" parent="."]
+
+[node name="grid1" type="Sprite" parent="grid"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 320, 240.5 )
+scale = Vector2( 0.0617761, 2.7268 )
+texture = ExtResource( 3 )
+
+[node name="grid2" type="Sprite" parent="grid"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 160, 240.5 )
+scale = Vector2( 0.0617761, 2.7268 )
+texture = ExtResource( 3 )
+
+[node name="grid3" type="Sprite" parent="grid"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 241, 160 )
+rotation = 1.57079
+scale = Vector2( 0.0617761, 2.7268 )
+texture = ExtResource( 3 )
+
+[node name="grid4" type="Sprite" parent="grid"]
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 241, 320 )
+rotation = 1.57079
+scale = Vector2( 0.0617761, 2.7268 )
+texture = ExtResource( 3 )
+
+[node name="symb" type="Node2D" parent="."]
+
+[node name="s1" type="AnimatedSprite" parent="symb"]
+position = Vector2( 80, 80 )
+scale = Vector2( 0.45, 0.45 )
+frames = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="s2" type="AnimatedSprite" parent="symb"]
+position = Vector2( 240, 80 )
+scale = Vector2( 0.45, 0.45 )
+frames = ExtResource( 1 )
+script = ExtResource( 6 )
+
+[node name="s3" type="AnimatedSprite" parent="symb"]
+position = Vector2( 400, 80 )
+scale = Vector2( 0.45, 0.45 )
+frames = ExtResource( 1 )
+script = ExtResource( 7 )
+
+[node name="s4" type="AnimatedSprite" parent="symb"]
+position = Vector2( 80, 240 )
+scale = Vector2( 0.45, 0.45 )
+frames = ExtResource( 1 )
+script = ExtResource( 5 )
+
+[node name="s5" type="AnimatedSprite" parent="symb"]
+position = Vector2( 240, 240 )
+scale = Vector2( 0.45, 0.45 )
+frames = ExtResource( 1 )
+script = ExtResource( 12 )
+
+[node name="s6" type="AnimatedSprite" parent="symb"]
+position = Vector2( 400, 240 )
+scale = Vector2( 0.45, 0.45 )
+frames = ExtResource( 1 )
+script = ExtResource( 8 )
+
+[node name="s7" type="AnimatedSprite" parent="symb"]
+position = Vector2( 80, 400 )
+scale = Vector2( 0.45, 0.45 )
+frames = ExtResource( 1 )
+script = ExtResource( 9 )
+
+[node name="s8" type="AnimatedSprite" parent="symb"]
+position = Vector2( 240, 397 )
+scale = Vector2( 0.45, 0.45 )
+frames = ExtResource( 1 )
+script = ExtResource( 11 )
+
+[node name="s9" type="AnimatedSprite" parent="symb"]
+position = Vector2( 400, 400 )
+scale = Vector2( 0.45, 0.45 )
+frames = ExtResource( 1 )
+script = ExtResource( 10 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 239, 239 )
+current = true
+zoom = Vector2( 1.1, 1.1 )
+
+[node name="won" type="RichTextLabel" parent="."]
+margin_left = 194.0
+margin_top = -40.0
+margin_right = 254.0
+margin_bottom = -12.0
+text = "O won"
+script = ExtResource( 15 )
+
+[node name="won2" type="RichTextLabel" parent="."]
+margin_left = 194.0
+margin_top = -40.0
+margin_right = 254.0
+margin_bottom = -12.0
+text = "X won"
+script = ExtResource( 14 )
+
+[node name="won3" type="RichTextLabel" parent="."]
+margin_left = 194.0
+margin_top = -40.0
+margin_right = 254.0
+margin_bottom = -12.0
+text = "Tie"
+script = ExtResource( 16 )
+
+[connection signal="button_up" from="reset" to="." method="_on_reset_button_up"]
+[connection signal="pressed" from="Buttons/Button" to="symb/s1" method="_on_Button_pressed"]
+[connection signal="pressed" from="Buttons/Button2" to="symb/s2" method="_on_Button2_pressed"]
+[connection signal="pressed" from="Buttons/Button3" to="symb/s3" method="_on_Button3_pressed"]
+[connection signal="pressed" from="Buttons/Button4" to="symb/s4" method="_on_Button4_pressed"]
+[connection signal="pressed" from="Buttons/Button5" to="symb/s5" method="_on_Button5_pressed"]
+[connection signal="pressed" from="Buttons/Button6" to="symb/s6" method="_on_Button6_pressed"]
+[connection signal="pressed" from="Buttons/Button7" to="symb/s7" method="_on_Button7_pressed"]
+[connection signal="pressed" from="Buttons/Button8" to="symb/s8" method="_on_Button8_pressed"]
+[connection signal="pressed" from="Buttons/Button9" to="symb/s9" method="_on_Button9_pressed"]
